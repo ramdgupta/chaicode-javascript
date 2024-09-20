@@ -1,4 +1,4 @@
-
+ki
 Class1
 Don't use var keyword
 Only use let and const for variable declaration
@@ -135,6 +135,33 @@ Note class 2 : Type conversion
 // 0 : false
 // empty string: false
 
+
+CLASS - 4 OPERATION 
+
+let value = 3;
+let newValue= - value;
+console.log(negValue) // -3
+apko pata hai result kya hoga 
+
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2**2)
+console.log(2/2);
+console.log(2%2);
+
+
+let see one scenario we combining two string operation 
+
+let str1 = "ram";
+let str2 = "gupta"
+let str3 = str1 + str2;
+console.log(str3); // ram gupta 
+
+
+suppose this operation done in a string and a number we har result should be with + operator 
+console.log("1" + 2); // 3 
+console.log(2 + "1"); // 3
 
 
 
