@@ -205,11 +205,95 @@ console.log(userTwo.email); // ram@mail.com
 
 
 
+const name = "hitesh"
+const repoCount = 50;
+
+console.log(`Hello my name is ${name} and my repo vount is ${repoCount}`);
+
+const gameName = ne String('hiteshhc');
+string is object in java script 
+
+ console.log(gameName[0]);
+ console.log(gameName__ptoto__)
+
+console.log(gameName.length)//8
+console.log(gameName.toUpperCase());
+
+// kis  index par character 
+console.log(gameName.charAt(2)); // t
+
+// agar mujhe pata karna ho y kis position par hai 
+console.log(gameName.indexOf("t"));
+
+// most important method is slice ismen negative value nahi de sakte if dete hain yo ye ignore karke 0 se start kareg
+
+const newString = gmaeName.subString(0,4);// hite include vale startindex yo endIndex -1
 
 
+slice men keval negative vale de sakte hai 
+const anotherString = gameName.slice(-8,4);
 
 
+cosnt newStringOne = "  hitesh ";
+
+isko fox katne ke liye hume string ke trim method.ko use karenge ye white space aur newline chartater par hi kam karta hai
+
+console.log(newStringOne.trim());
+
+const url = "hhtps://hotesh.com/hitehs chaoudhary
+
+but browser change this https://hitesh.com/hitesh%20chaudhary
+
+console.log(url.replace("%20", '-'))
+
+you can ask is this thing is avilable
+
+console.log(url includes("me"))
+
+console.log(gameName.split("_"))
+
+CLASS 6
+
+const score = 400;
+kai bat apko lagta hai ki ye data type number hi aap strictly define karna chahte ho 
+const balance = new Number(100)
+console.log(balance) // [Nimber : 100] 
+
+console.log(balance.toString())
+// 100 if you check typeof balance should so string type
+
+console.log(balance.toFixed(2))
+
+const otherNumber = 23.8996
+
+console.log(otherNumber.toPrecision(3)); 23.9
+
+const hindred = 1000000
+console.log(hundreds .toLocaleString('en-IN'));
 
 
+MAXvalue: Number
+
+Math  most powerful  library
+
+console.log(Math) all method and property you get and explore that 
+console.log
+Math.abs(4); //  4 either positive or negative
+Math.round(4.6) // 5
+Math.ceil(4.2)// 5
+Math.floor(4.9)// 4
+Math.min(4,3,5,8,2)
+Math.max(4,3,5,8,2)
+
+sabse jyada Math.random use hoti hai
+
+its value is between 0 to 1
+
+Math.random() 
+(Math.random()*10) +1;
+
+const min = 10;
+const max = 20;
+Math.floor(Math.random() * (max - min + 1)+min)
 
 
