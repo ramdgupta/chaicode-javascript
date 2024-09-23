@@ -180,9 +180,28 @@ these are comarision yo br avid in professional  vode but in interview  point it
 
 Class 5
 
-Datatypyes 
+// two type memory stack(premitive) and Heap (reference)
 
+Basic example lete hai
 
+let myYouTubeName = "rdGupta";
+
+let anotherName = myYouTubeName;
+
+anotherName ="shubiOm";
+
+vonsole.log(myYouTubeName);//rdGupta
+vonsole.log(anotherName); shubhiName
+
+let userOne = {
+    email: "user@mail com",
+    upi: "payupi@mail.com"
+}
+let userTwo = userOne;
+userTwo.email = "ram@mail.com";
+
+console.log(userOne.email); // ram@ mail.com
+console.log(userTwo.email); // ram@mail.com
 
 
 
