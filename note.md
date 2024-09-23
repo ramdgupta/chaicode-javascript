@@ -162,6 +162,27 @@ console.log(str3); // ram gupta
 suppose this operation done in a string and a number we har result should be with + operator 
 console.log("1" + 2); // 3 
 console.log(2 + "1"); // 3
+console.lo("2" > 1); 
+console.log("02"> 1);
+
+console.log(null > 0); // sometime Nan and some time 0 
+console.log(!null == 0);
+console.log(null>=0);
+
+
+console.log(undefined  == 0);
+console.log(undefined> 0);
+console.log(undefined 0);
+
+
+console.log("2" === 2);
+these are comarision yo br avid in professional  vode but in interview  point its important 
+
+Class 5
+
+Datatypyes 
+
+
 
 
 
