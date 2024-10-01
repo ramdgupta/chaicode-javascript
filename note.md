@@ -318,3 +318,190 @@ let myTimeStamp = Date.now();
 console.log(myTimeStamp)
 console.log(myCreatedDate.getTine());
 console.log(Math.floor(Date.now()/1000))
+
+CLASS 8
+/) array
+areay always in square bracet 
+const myArr = [0,1,2,3,4,5];
+the element of array string, number, boolean, aary, object , date etc
+java script array are recylable
+means we ca add remove value arrray after declaration array are  not assosiative 
+we can access array using index
+myArry[0]
+
+they are shallow copy 
+
+
+other method of declaration  of variable 
+
+const myNewArry = new Aarray(1,2,3,4)
+
+.push(6);
+.put(); remove last element
+.shift(); remove first element
+.unshift(); add at the starting of array try yo aviod this only use if it's extremely required 
+
+myArr.invludes(9);// boolean result
+myArr indexOf(3);// result 1 or -1
+
+const newArr = myawrr.join();
+console.log(myArr);
+console.log(newArr);
+join bind array and convert , separated string
+
+// slice, splice
+
+console.log("A ", myaArr); 
+slice return a sction of aaray
+const myn1 = myArr.slice(1,3);
+console.log(myn1);
+console.log("B ", myArry);
+
+const myn2 = myArr splice(1,3);
+console.log("C", myArr)
+consoole.log(myn2);
+splice manupulate array 
+
+array part 2
+
+const marvel_hero = ["thor", "Ironman", "spiderman"];
+const dc_hero = ["superman", "flash", "batman"];
+
+marvel_heros.push(dc_heros);
+console.log(marval_heros);
+
+output :
+["thor", "irin man", "spiderman", ["superman", "flash", "batman"]];
+
+const allHeros = marvel_hero(dc_hero):
+
+its give desire outpot :
+["thor","iton man", "spider man", "flash", "batman"];
+
+out most usefull operator is spread operator
+
+const all_new_hero = [...marvel_hero, ...dc_hero];
+
+const another_array = [1,2,3,[4,5,6],7,[6,7[4,5]]]
+
+const real_another_array = another_array.flat(Infinity)
+
+console.log(real_another_array)
+
+
+console.log(Array.isArray("ram"); // false
+console.log(Array.from("Ram")) // ["R", "a", "m"]
+console.log(Array.from({name:"Ram"})); // its not able to convert this because  its don't understand which part to conevert in array key or value so we need to define to make array with key or with value 
+
+
+
+may assume a situation 
+
+let score1=100;
+let score2=200;
+console.log(Array.of(score1,scor2):;// [100,200]
+
+// object
+- singleton : vonstrutor se bana hua 
+- jab hum literal se banate hai to singlton nahi banta
+- jab hum constrtur se banate hai to singleton banta hai
+
+const jsUser = {} // this is a object
+
+const mySym =  Symbol("key1")
+const jsUser ={
+    name: "Ram",
+    age:18,
+     mySym: "myket1" // this wrong way to making key to symbol
+    [mySym]:"mykey1" // this is the right way
+    email: "ram@gmail com",
+    isLogin:flase,
+    lastLoginDays: ["Monday", "Saturday"],
+    "full name": " Ram Gupta "
+} // key always treat by system as string 
+console.log(jsUser.name); // ram
+console.log(jsUser[name]) // error when you try to access object property on braket need to abbd "' mark so system  understand its object value because we accessing array indexing also in bravket
+
+console.log(jsUser["name"]) // this is right way
+console.log(jsUser."full Name")// if define a vale this wat in object you cant access this way
+
+console.log(jsUser["full name"]); this is the write way
+console.log(jsUser.mySym)// its not work symbol also need access in double qoute 
+console.log(typeof jsUser.mySym)// 
+console.log(jsUser[mySym]);// this the right way
+
+
+
+if you want yo lock an vaue of object then you need a freez method to apply object and define the vaue to be freezed.
+
+Object.freez(jsUser)
+jsUser.name="ram";
+
+JsUser.greeting = function (){
+
+    consolemlog("Hello js user ");
+}
+
+console.log(jsUser.greeting()) // Hello Js user
+console.log(jsUser.greeting)// [Function (anonymous)]
+jsUser.greetingTwo= function (){
+    console.log("Hello Js user, $(this.name))
+}
+
+
+
+
+
+
+const tinderUser = {};
+
+user.id = 1;
+user name = "ram";
+
+console.log(user);
+
+const realUser = {
+    email: "ram@gmail.com",
+    fullname:{
+        userFullName:{
+        fname: "om",
+        lname:"gupta"
+        }
+    }
+}
+optional chainin and chaining
+console.log(realUser.fullname.userFullName.fname)// chaining
+
+// optional chaining use if obj property not exist then we use this 
+console.log(realUser.fullName?.userFullBame.fname);
+
+const obj1 = {1: "a" , 2:"b"}
+
+const obj3 {obj1, obj2}//
+
+const obj4= Object.assign({}obj1,obj2)// {} it's  use empty  object as source and other are target
+
+// epread way
+
+const obj5= {...obj1, ...obj2}
+
+// for value comming from database
+const user =[
+    {
+        id:1,
+        name:"ram"
+    },
+    {
+        id:2,
+        name:"om"
+    }
+]
+console.log(Object.keys(tinderUser))
+console.log(Object.valuse(tinderUser))
+console.log(Object entries(tinderUser))
+console.log(tinderUser.hasOwnProperty('isLoggedIn')) // true and flase
+
+
+
+
+
