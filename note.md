@@ -502,6 +502,91 @@ console.log(Object entries(tinderUser))
 console.log(tinderUser.hasOwnProperty('isLoggedIn')) // true and flase
 
 
+// Function 
+
+function sayMyName() {
+    console.log("r");
+}
+
+function  add (n1,n2){
+    console.log(n1+n2)
+}
+add(5,6)
+
+hum ese variable ke andar bhi store kar dete hain
+
+const result = add(3, 2);
+console.log(result) // undefined because  ye function return kuchh bhi nahi kqr raha keval console.log kar raha hao
+
+function  addNumber(num1, num2){
+    console.log("ram");
+    return num1 +num2;
+}
+
+const newResult = addNumber(4,7) ;
+console.log(newResult); now its work result 11
+
+aur kitne tarike se value linja sakti hai 
+
+function showMessage(username){
+    return `${username} just logged`
+}
+
+shiwMessage("ram"); // not display becUse its a return type so its not show in conaole log
+
+show i need first store this in an variable or direct console log to this function 
+
+console.log(showMessage("ram")
+or
+const displayName = showMessage("ram");
+
+console.log(dispalyName);
+
+function showNewUser(userName){
+    if(userName===undefined){
+       console.log("please enter user name");
+       return;
+    }
+    return `${userName} just logged in`
+}
+
+or function showNewUser(userName){
+    if (!userName){
+        console.log("please enter user name ")
+    }
+    return `${userName} just logged in`
+}
+
+or function with default parameter function showNewUser(userName: "guest"){
+ return `${userNamr} just logged`
+}
+
+function restOperator(...num1){
+    return num1;
+}
+console.log(restOpertor(200,300,500))
+ 
+ const userObj = {
+    name:"ram",
+    price:100
+ }
+
+ function handelObj(anyobj){
+    consol.log(` user name is ¢{anyobj.name}` and price is ${anyobj.price})
+ }
+handelObj(user);
+
+const myArray = [200,100,500,700]
+
+function returnSecondValue(getArray){
+    rety getArray[1]
+}
+ console.log(returnSecondArray(myArray));
 
 
+ // scope 
+
+ if(true){
+    console.log("a")
+ }
 
