@@ -296,4 +296,25 @@ const min = 10;
 const max = 20;
 Math.floor(Math.random() * (max - min + 1)+min)
 
+CLASS 7  Date 
 
+
+
+
+let myDate = new Date();
+console.log(myDate.toString());
+myDate.toDateString()
+
+myDate.toLocalString()
+console.log(typeof myDate)
+
+let myCreateDate = new Date (2023, 0, 23);
+let myCreateDate =new Date  (2023, 0, 23, 5,3)
+let myCreateDate = new Date ("2023-01-2023)
+let myCreateDate = new Date ("01-14-2023")
+console.log(myCreatedDate.toLocaleStrinh)
+
+let myTimeStamp = Date.now();
+console.log(myTimeStamp)
+console.log(myCreatedDate.getTine());
+console.log(Math.floor(Date.now()/1000))
